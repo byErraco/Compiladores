@@ -1,0 +1,20 @@
+Programa Prueba{
+Inicio
+   Var x as Integer = 5;
+   Var y as Float = 9.99;
+   Var z as Float;
+   Var T as Boolean = True;
+  
+  if(z==True){
+    z = x+y;
+
+  }elseif(z==False){
+  
+  z = y-x;
+    
+
+  }endif;
+
+
+Fin
+}

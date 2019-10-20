@@ -1,0 +1,338 @@
+@import "fonts.css";
+/*=============================================
+GLOBAL
+=============================================*/
+
+body{
+	background-color:rgb(69, 74, 81);
+	/*background-color:#5e636b;*/
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+font-family: helvetica;
+	box-sizing: border-box;
+	color: white;
+}
+h1{
+font-size: 2.3em;
+line-height: 1.3em;
+margin: 15px 0;
+text-align: center;
+font-weight: 300;
+font-family: helvetica;
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+}
+::-webkit-scrollbar-track {
+      background-color: #34363a;
+} 
+::-webkit-scrollbar-thumb {
+      background-color: #686b70;
+}
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
+#main-header{
+background: #333;
+color: white;
+height: 80px;
+}
+
+#main-header a{
+color: white;
+  }
+
+#logo-header{
+float: left;
+padding: 15px 0 0 20px;
+text-decoration: none;
+}
+
+#logo-header:hover{
+color: #0b76a6;
+}
+
+#logo-header .site-name{
+display: block;
+font-weight: 700;
+font-size: 1.2em;
+}
+
+#logo-header .site-desc{
+display: block;
+font-weight: 300;
+font-size: 1.2em;
+color: #999;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a{
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background: #0b76a6;
+}
+
+#Tascii{
+	width: 99.9%;
+	height: 100%;
+	color:white;
+	columns: 6;
+}
+.asciicol{
+	margin: 0px;
+	resize: none;
+	background-color:  #34363a ;
+	overflow: auto;
+	width: 99.9%;
+	padding-left: 25px;
+	padding-top: 10px;
+	font-family: Consolas;
+	font-size: 12pt;
+	border-color: black;
+	outline-color: black;
+}
+.CodeText{
+	margin-left: 2.5%;
+	resize: none;
+	background-color:  #333;
+	color: #c6cbd1;
+	overflow: auto;
+	width: 95%;
+	height: 550px;
+	font-family: Consolas;
+	font-size: 15pt;
+	border-color: black;
+	outline-color: #195a7f;	
+}
+#AnsT{
+	margin-left: 2.6%;
+	columns : 2;
+	width: 95%;
+	margin-bottom: 1%;
+}
+.AnsText{
+	background-color:  #333;
+	color: #a6a9ad;
+	overflow: auto;
+	margin-left: 10px;
+	height: 340px;
+	font-family: Consolas;
+	font-size: 12pt;
+	border-color: black;
+	position: relative;
+
+}
+#AnsTex{
+	
+	
+}
+#AnsErr{
+	
+	
+	color: #c4818d;
+	
+}
+.botonComp{
+	margin-top: 0px;
+	margin-left: 75px;
+	margin-bottom: 10px;
+	width: 750px;
+	height: 50px;
+}
+.btn {
+  position: relative;
+  font-size: 20px;
+  display: block;
+  margin: 15px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #333;
+  color: #ecf0f1;
+
+  transition: background-color .3s;
+}
+.btn:hover, .btn:focus {
+  background-color: #0b76a6;
+  cursor: hand;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 300px;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgb(11, 115, 163, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 100%;
+  padding-top: 100%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.btn.black {
+  background-color: #333;
+  outline-color: none;
+}
+
+.btn.black:hover, .btn.black:focus {
+  background-color: #0b76a6;
+  cursor: hand;
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
+
+@media(min-width:1200px){
+
+	.col-lg-12{width:100%;}
+	.col-lg-11{width:91.66666667%;}
+	.col-lg-10{width:83.33333333%;}
+	.col-lg-9{width:75%;}
+	.col-lg-8{width:66.66666667%;}
+	.col-lg-7{width:58.33333333%;}
+	.col-lg-6{width:50%;}
+	.col-lg-5{width:41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2 {width: 16.66666667%;}
+	.col-lg-1 {width: 8.33333333%;}
+	.col-lg-0 {display:none;}
+
+	#seccion4 article p img{
+		width:50%;
+	}
+
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px){
+
+	.col-md-12{width:100%;}
+	.col-md-11{width:91.66666667%;}
+	.col-md-10{width:83.33333333%;}
+	.col-md-9{width:75%;}
+	.col-md-8{width:66.66666667%;}
+	.col-md-7{width:58.33333333%;}
+	.col-md-6{width:50%;}
+	.col-md-5{width:41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+	.col-md-0 {display:none;}
+
+	#seccion4 article p img{
+		width:60%;
+	}
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px){
+
+	.col-sm-12{width:100%;}
+	.col-sm-11{width:91.66666667%;}
+	.col-sm-10{width:83.33333333%;}
+	.col-sm-9{width:75%;}
+	.col-sm-8{width:66.66666667%;}
+	.col-sm-7{width:58.33333333%;}
+	.col-sm-6{width:50%;}
+	.col-sm-5{width:41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+	.col-sm-0 {display:none;}
+	
+	#seccion4 article p img{
+		width:100%;
+		margin-bottom: 20px;
+	}
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px){
+
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.col-xs-0 {display:none;}
+
+	#seccion4 article p img{
+		width:100%;
+		margin-bottom: 20px;
+	}
+
+}
